@@ -4,20 +4,20 @@
   margin: 0;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1400px;
-    height: 50px;
-    background-color: rgb(75, 75, 75);
-    padding: 10px 30px 10px 30px;
-    margin:20px 50px 20px 50px;
-    border-radius:30px;
-  
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  height: 50px;
+  background-color: rgb(75, 75, 75);
+  padding: 10px 30px 10px 30px;
+  margin: 20px 50px 20px 50px;
+  border-radius: 30px;
+  font-family: Vazir-Medium;
 }
-a{
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
