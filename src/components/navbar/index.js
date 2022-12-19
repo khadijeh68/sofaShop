@@ -8,7 +8,7 @@ function Navbar() {
       <NavLink to="/">
         <span>sofaShop</span>
       </NavLink>
-      <div>
+      <div className={style.item}>
         <NavLink to="products">
           <span>محصولات</span>{" "}
         </NavLink>
@@ -20,7 +20,8 @@ function Navbar() {
         </NavLink>
       </div>
       <NavLink to="search">
-        <span>جستجو</span> </NavLink>
+        <span>جستجو</span>{" "}
+      </NavLink>
     </nav>
   );
 }
