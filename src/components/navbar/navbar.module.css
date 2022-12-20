@@ -16,13 +16,13 @@
   border-radius: 30px;
   font-family: Vazir-Medium;
   z-index: 100;
-  box-shadow: 0 0 6px rgb(232, 188, 122);
+  box-shadow: 0 0 6px rgb(255, 255, 255);
 }
 a {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
-.item span{
-   padding-left: 50px;
+.item span {
+  padding-left: 50px;
 }

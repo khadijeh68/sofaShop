@@ -1,0 +1,12 @@
+.slider{
+    width: 100%;
+    height: 753px;
+    
+}
+.carousel{
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 750px;
+}

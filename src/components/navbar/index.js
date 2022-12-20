@@ -1,4 +1,4 @@
-import React from "react";
+import { IoSearch } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import style from "./navbar.module.css";
 
@@ -20,7 +20,7 @@ function Navbar() {
         </NavLink>
       </div>
       <NavLink to="search">
-        <span>جستجو</span>{" "}
+        <span><IoSearch/></span>{" "}
       </NavLink>
     </nav>
   );
