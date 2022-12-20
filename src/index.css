@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Vazir-Medium";
+  src: local("Vazir-Medium"),
+    url("./assets/fonts/Vazir-Medium.ttf") format("truetype");
+}
