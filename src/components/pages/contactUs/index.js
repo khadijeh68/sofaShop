@@ -1,8 +1,11 @@
-import { Button, Form } from "react-bootstrap";
+import { Button, Form, Card, ListGroup } from "react-bootstrap";
 import style from "./contact.module.css";
 import {
   IoCallOutline,
   IoLocationOutline,
+  IoLogoFacebook,
+  IoLogoLinkedin,
+  IoLogoTwitter,
   IoMailOutline,
 } from "react-icons/io5";
 
@@ -11,7 +14,7 @@ function ContactUs() {
     <div className={style.main}>
       <h2>تماس با ما</h2>
       <div className={style.contact}>
-        <Form className={style.form}>
+        <Form className="w-50 m-3">
           <Form.Group className="mb-3">
             <Form.Control
               type="text"
@@ -29,25 +32,33 @@ function ContactUs() {
             ارسال
           </Button>
         </Form>
-        <div className={style.icon}>
-          <h3>
-            <IoLocationOutline />
-          </h3>
-          <p>تهران</p>
-        </div>
-        <div className={style.icon}>
-          <h3>
-            <IoCallOutline />
-          </h3>
-          <p>021-66332211</p>
-        </div>
-        <div className={style.icon}>
-          <h3>
-            <IoMailOutline />
-          </h3>
-          <p>hi@email.com</p>
-        </div>
-       
+        <Card style={{ width: "18rem" }} className={style.card}>
+          <ListGroup variant="flush">
+            <ListGroup.Item>
+              <div>
+                <IoLocationOutline className="h4" />
+                <p className="mb-0">تهران</p>
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <div>
+                <IoCallOutline className="h4" />
+                <p className="mb-0">021-66332211</p>
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <div>
+                <IoMailOutline className="h4" />
+                <p className="mb-0">hi@email.com</p>
+              </div>
+            </ListGroup.Item>
+            <ListGroup.Item className="h4">
+              <IoLogoFacebook />
+              <IoLogoLinkedin />
+              <IoLogoTwitter />
+            </ListGroup.Item>
+          </ListGroup>
+        </Card>
       </div>
     </div>
   );

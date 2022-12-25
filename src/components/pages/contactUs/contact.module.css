@@ -1,16 +1,15 @@
-.main{
-    direction: rtl;
-    text-align: center;
-    font-family: Vazir-Bold;
+.main {
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir-Bold;
 }
-.form{
-    width: 50%;
-    margin: 30px 375px 50px 0
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+svg{
+    margin-left: 10px;
+    cursor: pointer;
 }
-
