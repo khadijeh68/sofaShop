@@ -1,4 +1,4 @@
-import { Button, Form, Card, ListGroup } from "react-bootstrap";
+import { Button, Card, ListGroup } from "react-bootstrap";
 import style from "./contact.module.css";
 import {
   IoCallOutline,
@@ -8,30 +8,86 @@ import {
   IoLogoTwitter,
   IoMailOutline,
 } from "react-icons/io5";
+import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
 
 function ContactUs() {
+  const SignupSchema = Yup.object().shape({
+    name: Yup.string()
+
+      .min(2, "تعداد کاراکتر وارد شده کم است!")
+
+      .max(50, "تعداد کاراکتر وارد شده زیاد است!")
+
+      .required("پر کردن فیلد الزامی است"),
+
+    email: Yup.string()
+      .email("ایمیل نامعتبر است")
+      .required("پر کردن فیلد الزامی است"),
+    message: Yup.string()
+
+      .min(2, "تعداد کاراکتر وارد شده کم است!")
+
+      .required("پر کردن فیلد الزامی است"),
+  });
+
   return (
     <div className={style.main}>
       <h2>تماس با ما</h2>
       <div className={style.contact}>
-        <Form className="w-50 m-3">
-          <Form.Group className="mb-3">
-            <Form.Control
-              type="text"
-              placeholder="نام و نام خانوادگی"
-              size="sm"
-            />
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Control type="email" placeholder="آدرس ایمیل" size="sm" />
-          </Form.Group>
-          <Form.Group className="mb-3">
-            <Form.Control as="textarea" placeholder="پیام" rows={3} size="sm" />
-          </Form.Group>
-          <Button variant="secondary" type="submit">
-            ارسال
-          </Button>
-        </Form>
+        <Formik
+          initialValues={{
+            name: "",
+            email: "",
+            message: "",
+          }}
+          validationSchema={SignupSchema}
+          onSubmit={(values) => {
+            // same shape as initial values
+            console.log(values);
+          }}
+        >
+          {({ errors, touched }) => (
+              <Form>
+                <div>
+                  <Field
+                    name="name"
+                    type="text"
+                    placeholder="نام و نام خانوادگی"
+                    className={style.form}
+                  />
+                  {errors.name && touched.name ? (
+                    <div className={style.error}>{errors.name}</div>
+                  ) : null}
+                </div>
+                <div>
+                  <Field
+                    name="email"
+                    type="email"
+                    placeholder="آدرس ایمیل"
+                    className={style.form}
+                  />
+                  {errors.email && touched.email ? (
+                    <div className={style.error}>{errors.email}</div>
+                  ) : null}
+                </div>
+                <div>
+                  <Field
+                    name="message"
+                    as="textarea"
+                    placeholder="پیام"
+                    className={style.form}
+                  />
+                  {errors.message && touched.message ? (
+                    <div className={style.error}>{errors.message}</div>
+                  ) : null}
+                </div>
+                <Button variant="secondary" type="submit" className="m-3">
+                  ارسال
+                </Button>
+              </Form> 
+          )}
+        </Formik>
         <Card style={{ width: "18rem" }} className={style.card}>
           <ListGroup variant="flush">
             <ListGroup.Item>

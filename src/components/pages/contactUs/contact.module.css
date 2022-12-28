@@ -13,3 +13,10 @@ svg{
     margin-left: 10px;
     cursor: pointer;
 }
+.form{
+    width: 500px;
+    margin-top: 20px;
+}
+.error{
+    color: rgb(142, 43, 43);
+}
