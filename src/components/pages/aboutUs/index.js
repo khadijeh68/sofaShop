@@ -1,9 +1,9 @@
-import React from 'react'
+import style from "./aboutUs.module.css";
 
 function AboutUs() {
   return (
-    <div>
-      about
+    <div className={style.main}>
+    فروشگاه اینترنتی مبلمان
     </div>
   )
 }
