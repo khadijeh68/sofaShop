@@ -1,0 +1,22 @@
+.main {
+  direction: rtl;
+  text-align: center;
+  font-family: Vazir-Bold;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+svg{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.form{
+    width: 500px;
+    margin-top: 20px;
+}
+.error{
+    color: rgb(142, 43, 43);
+}
