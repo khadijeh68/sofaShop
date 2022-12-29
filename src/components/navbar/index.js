@@ -25,7 +25,9 @@ function Navbar() {
         </NavLink>
       </div>
       <NavLink to="search" style={navLinkStyles}>
-        <span><IoSearch/></span>{" "}
+        <span>
+          <IoSearch />
+        </span>{" "}
       </NavLink>
     </nav>
   );
