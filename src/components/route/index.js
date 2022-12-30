@@ -1,9 +1,9 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AboutUs from "../pages/aboutUs";
-import ContactUs from "../pages/contactUs";
-import Home from "../pages/home";
-import Products from "../pages/products";
+import AboutUs from "../../pages/aboutUs";
+import ContactUs from "../../pages/contactUs";
+import Home from "../../pages/home";
+import Products from "../../pages/products";
 import SharedLayout from "../shared";
 
 function AppRouter() {
