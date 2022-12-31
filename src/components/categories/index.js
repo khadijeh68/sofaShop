@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchCategories } from "../../redux/features/categories/categoriesSlice";
@@ -19,9 +20,11 @@ function Categories() {
     <>
       {categoriesList.map((category) => {
         return (
-          <div key={category.id}>
+          <Card key={category.id} style={{ width: '18rem' }} className={style.card}>
+            <Card.Header className={style.header}>
             <Link to={`/categories/${category.id}`} className={style.category}>{category.name}</Link>
-          </div>
+            </Card.Header>
+          </Card>
         );
       })}
     </>
