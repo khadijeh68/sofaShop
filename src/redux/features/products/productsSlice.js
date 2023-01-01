@@ -18,6 +18,19 @@ export const fetchProducts = createAsyncThunk(
     return response;
   }
 );
+
+export const getProducts = createAsyncThunk(
+  "products/getProducts",
+  async (id) => {
+    const response = axios({
+      url: `${PRODUCTS_URL}?category=${id}&_limit=10`,
+    }).then((res) => {
+      return res.data;
+    });
+    return response;
+  }
+);
+
 const productsSlice = createSlice({
   name: "products",
   initialState,
@@ -31,6 +44,19 @@ const productsSlice = createSlice({
     },
 
     [fetchProducts.rejected]: (state, action) => {
+      console.log(action);
+      state.loading = false;
+      state.error = "wrong...";
+    },
+    [getProducts.pending]: (state) => {
+      state.loading = true;
+    },
+    [getProducts.fulfilled]: (state, action) => {
+      state.loading = false;
+      state.productsList = action.payload;
+    },
+
+    [getProducts.rejected]: (state, action) => {
       console.log(action);
       state.loading = false;
       state.error = "wrong...";
