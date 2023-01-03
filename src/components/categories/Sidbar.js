@@ -10,10 +10,13 @@ import { fetchCategories } from "../../redux/features/categories/categoriesSlice
 
 const Sidbar = () => {
   const dispatch = useDispatch();
-  const categoryList = useSelector((state) => state.categories.categoryList);
+  const categoriesList = useSelector(
+    (state) => state.categories.categoriesList
+  );
+
   const [category, setCategory] = useState([]);
   const { categoryId } = useParams();
-  
+
 
   useEffect(() => {
     dispatch(fetchCategories());
@@ -25,7 +28,7 @@ const Sidbar = () => {
   return (
     <div>
       <div>
-        {categoryList.map((item) => {
+        {categoriesList.map((item) => {
           return (
             <div key={item.id}>
               <Link
@@ -40,26 +43,25 @@ const Sidbar = () => {
         })}
       </div>
       <div>
-        {category.map((item) => {
+        {category.map((product) => {
           return (
             <Link
-              to={`/products/${item.id}`}
+              to={`/products/${product.id}`}
               className="text-decoration-none"
-              key={item.id}
+              key={product.id}
             >
               <div>
                 <Card>
                   <Card.Img
                     style={{ width: "100px" }}
                     variant="top"
-               
-                    alt="mobile"
+         
                   />
                   <Card.Body>
-                    <Card.Text style={{textAlign: "center"}}>{item.name}</Card.Text>
+                    <Card.Text style={{textAlign: "center"}}>{product.name}</Card.Text>
                     <Card.Text style={{textAlign: "center"}}>
                       {digitsEnToFa(
-                        item.price
+                        product.price
                           .toString()
                           .replace(/\B(?=(\d{3})+(?!\d))/g, "،")
                       )} تومان 

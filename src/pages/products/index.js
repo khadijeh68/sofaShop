@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { Button, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Categories from "../../components/categories";
 import { fetchProducts } from "../../redux/features/products/productsSlice";
 import style from "./products.module.css";
 
@@ -17,7 +16,6 @@ function Products() {
 
   return (
     <>
-    <Categories/>
       {productsList.map((product) => {
         return (
           <Link

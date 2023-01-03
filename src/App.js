@@ -6,7 +6,7 @@ import { store } from "./redux/features/Store";
 function App() {
   return (
     <Provider store={store}>
-      <AppRouter />;
+      <AppRouter />
     </Provider>
   );
 }
