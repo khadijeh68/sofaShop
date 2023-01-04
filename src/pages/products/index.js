@@ -1,14 +1,13 @@
 import { digitsEnToFa } from "@persian-tools/persian-tools";
 import { useEffect } from "react";
 import { Button, Card } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchProducts } from "../../redux/features/products/productsSlice";
 import style from "./products.module.css";
 
 function Products({ productsList, id }) {
   const dispatch = useDispatch();
-  // const productsList = useSelector((state) => state.products.productsList);
 
   useEffect(() => {
     dispatch(fetchProducts());
@@ -17,7 +16,7 @@ function Products({ productsList, id }) {
   return (
     <>
       {productsList
-        .filter((item) => item.category == id)
+        .filter((item) => item.category === id)
         .slice(0, 6)
         .map((product) => {
           return (
