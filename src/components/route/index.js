@@ -16,7 +16,7 @@ function AppRouter() {
           {/* <Route path="products" element={<Products />} /> */}
           
           <Route path="categories" element={<Categories />}>
-            <Route path=":categoryId" element={<Sidbar />} />
+            {/* <Route path=":categoryId" element={<Sidbar />} /> */}
           </Route>
           <Route path="aboutUs" element={<AboutUs />} />
           <Route path="contactUs" element={<ContactUs />} />

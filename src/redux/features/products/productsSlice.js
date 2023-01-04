@@ -23,7 +23,7 @@ export const getProducts = createAsyncThunk(
   "products/getProducts",
   async (id) => {
     const response = axios({
-      url: `${PRODUCTS_URL}?category=${id}&_limit=10`,
+      url: `${PRODUCTS_URL}?category=${id}&_limit=4`,
     }).then((res) => {
       return res.data;
     });

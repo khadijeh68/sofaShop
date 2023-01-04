@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Products from "../../pages/products";
 import { fetchCategories } from "../../redux/features/categories/categoriesSlice";
-import { fetchProducts } from "../../redux/features/products/productsSlice";
+import { getProducts } from "../../redux/features/products/productsSlice";
 import style from "./category.module.css";
 
 function Categories() {
@@ -15,7 +15,7 @@ function Categories() {
   const productsList = useSelector((state) => state.products.productsList);
 
   useEffect(() => {
-    dispatch(fetchProducts());
+    dispatch(getProducts());
     dispatch(fetchCategories());
   }, [dispatch]);
 
