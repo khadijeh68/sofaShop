@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-
+import style from "./sidbar.module.css"
 import { Button, Card } from "react-bootstrap";
 import { digitsEnToFa } from "@persian-tools/persian-tools";
 import { getProducts } from "../../redux/features/products/productsSlice";
@@ -50,7 +50,7 @@ const Sidbar = () => {
               className="text-decoration-none"
               key={product.id}
             >
-              <div>
+              <div className={style.card}>
                 <Card>
                   <Card.Img
                     style={{ width: "100px" }}
