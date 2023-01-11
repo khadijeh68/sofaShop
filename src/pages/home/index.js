@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Slide from "../../slider/index";
+import Slide from "../../components/slider";
+
 
 function Home() {
   return (

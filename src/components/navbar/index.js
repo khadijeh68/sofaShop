@@ -10,12 +10,15 @@ function Navbar() {
   };
   return (
     <nav className={style.nav}>
-      <NavLink to="/" style={navLinkStyles}>
-        <span>sofaShop</span>
+      <NavLink to="search" style={navLinkStyles}>
+        <span>
+          <IoSearch />
+        </span>{" "}
       </NavLink>
+
       <div className={style.item}>
-        <NavLink to="products" style={navLinkStyles}>
-          <span>محصولات</span>{" "}
+        <NavLink to="categories" style={navLinkStyles}>
+          <span>دسته بندی محصولات</span>{" "}
         </NavLink>
         <NavLink to="aboutUs" style={navLinkStyles}>
           <span>درباره ما </span>
@@ -24,10 +27,8 @@ function Navbar() {
           <span>تماس با ما </span>
         </NavLink>
       </div>
-      <NavLink to="search" style={navLinkStyles}>
-        <span>
-          <IoSearch />
-        </span>{" "}
+      <NavLink to="/" style={navLinkStyles}>
+        <span>sofaShop</span>
       </NavLink>
     </nav>
   );
