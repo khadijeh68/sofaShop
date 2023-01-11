@@ -23,10 +23,13 @@ function Categories() {
     <>
       {categoriesList.map((category) => {
         return (
-          <div>
+          <div key={category.id}>
             <Card
-              key={category.id}
-              style={{ width: "8rem" , textAlign:"center",backgroundColor:"#fec89a"}}
+              style={{
+                width: "8rem",
+                textAlign: "center",
+                backgroundColor: "#99d98c",
+              }}
               className={style.card}
             >
               <Card.Header className={style.header}>

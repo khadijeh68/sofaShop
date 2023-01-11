@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import style from "./sidbar.module.css"
+import style from "./sidbar.module.css";
 import { Button, Card } from "react-bootstrap";
 import { digitsEnToFa } from "@persian-tools/persian-tools";
 import { getProducts } from "../../redux/features/products/productsSlice";
 import { fetchCategories } from "../../redux/features/categories/categoriesSlice";
-
 
 const Sidbar = () => {
   const dispatch = useDispatch();
@@ -16,7 +15,6 @@ const Sidbar = () => {
 
   const [category, setCategory] = useState([]);
   const { categoryId } = useParams();
-
 
   useEffect(() => {
     dispatch(fetchCategories());
@@ -36,7 +34,7 @@ const Sidbar = () => {
                 key={item.id}
                 className="text-decoration-none mt-5"
               >
-               {item.name}
+                {item.name}
               </Link>
             </div>
           );
@@ -55,18 +53,23 @@ const Sidbar = () => {
                   <Card.Img
                     style={{ width: "100px" }}
                     variant="top"
-         
+                    src={product.image}
                   />
                   <Card.Body>
-                    <Card.Text style={{textAlign: "center"}}>{product.name}</Card.Text>
-                    <Card.Text style={{textAlign: "center"}}>
+                    <Card.Text style={{ textAlign: "center" }}>
+                      {product.name}
+                    </Card.Text>
+                    <Card.Text style={{ textAlign: "center" }}>
                       {digitsEnToFa(
                         product.price
                           .toString()
                           .replace(/\B(?=(\d{3})+(?!\d))/g, "،")
-                      )} تومان 
+                      )}{" "}
+                      تومان
                     </Card.Text>
-                    <Button variant="outline-primary" size="sm">توضیحات بیشتر...  </Button>
+                    <Button variant="outline-primary" size="sm">
+                      توضیحات بیشتر...{" "}
+                    </Button>
                   </Card.Body>
                 </Card>
               </div>
@@ -77,5 +80,4 @@ const Sidbar = () => {
     </div>
   );
 };
-
 export default Sidbar;
