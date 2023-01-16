@@ -5,7 +5,7 @@ import Slide from "../../components/slider";
 function Home() {
   return (
     <div>
-      <Slide />
+      {/* <Slide /> */}
     </div>
   );
 }
