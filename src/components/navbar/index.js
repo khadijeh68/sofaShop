@@ -46,8 +46,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <NavLink to="/" style={navLinkStyles}>
-        {/* <span>sofaShop</span> */}
-        <img src={logo} alt="sofaShop" />
+        <img src={logo} alt="sofaShop" className={styles.img} />
       </NavLink>
       <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
         {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}

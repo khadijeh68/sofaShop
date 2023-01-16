@@ -13,9 +13,7 @@
    /* z-index: 100; */
    box-shadow: 0 0 6px rgb(91, 53, 53); 
 }
-nav{
-  margin-top: 10px;
-}
+
 a {
   color: #333;
   text-decoration: none;
@@ -35,7 +33,7 @@ a {
 .mobile_btn {
   display: none;
 }
-img {
+.img {
   vertical-align: 0;
   margin-top: 10px;
 }
