@@ -1,5 +1,6 @@
 
 import { Banner } from "../../components/banner/Banner";
+import FooterSection from "../../components/footerSection";
 import Slide from "../../components/slider";
 
 
@@ -8,7 +9,7 @@ function Home() {
     <div>
        <Slide /> 
        <Banner/>
-       
+       <FooterSection/>
     </div>
   );
 }

@@ -1,6 +1,5 @@
+
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: rgb(185, 184, 183);
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 .container_sofaShop {
@@ -21,8 +20,13 @@
 li {
   padding: 6px;
 }
-svg{
-    color: black;
+svg {
+  color: black;
+}
+svg:hover,
+.contact img {
+  color: rgb(127, 21, 21);
+  transform: rotate(10deg);
 }
 
 .contact {
@@ -50,7 +54,7 @@ svg{
 }
 
 @media screen and (max-width: 340px) {
-      li{
-        font-size: 1rem;
-      }
+  li {
+    font-size: 1rem;
+  }
 }
