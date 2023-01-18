@@ -11,13 +11,13 @@ const Footer = () => {
           تمامی حقوق متعلق به شرکت سوفاشاپ می باشد.
         </p>
         <ul className={styles.contact}>
-          <li><IoLogoFacebook /></li>
-          <li><IoLogoLinkedin /></li>
-          <li><IoLogoTwitter/></li>
-          <li><IoLogoInstagram/></li>
-          <li><IoLogoYoutube/></li>
-          <li><BsTelegram/></li>
-          <li><img src={aparatLogo} alt="aparat Logo" style={{width: "18px" , height: "18px"}}/></li>
+          <li><a href="https://www.facebook.com/sofaShop"><IoLogoFacebook /></a></li>
+          <li><a href="https://www.linkedin.com/sofaShop"><IoLogoLinkedin /></a></li>
+          <li><a href="https://www.twitter.com/sofaShop"><IoLogoTwitter/></a></li>
+          <li><a href="https://www.instagram.com/sofaShop"><IoLogoInstagram/></a></li>
+          <li><a href="https://www.youtube.com/sofaShop"><IoLogoYoutube/></a></li>
+          <li><a href="https://www.telegram.com/sofaShop"><BsTelegram/></a></li>
+          <li><a href="https://www.aparat.com/sofaShop"><img src={aparatLogo} alt="aparat Logo" style={{width: "18px" , height: "18px"}}/></a></li>
         </ul>
       </div>
     </div>
