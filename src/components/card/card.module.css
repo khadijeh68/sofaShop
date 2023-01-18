@@ -2,7 +2,6 @@
   margin: 0.5rem;
   border-radius: 10px;
   box-shadow: rgb(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  
 }
 .card img {
   width: 100%;
@@ -14,5 +13,5 @@
 p {
   font-size: medium;
   text-align: center;
-  padding: 5px;
-}
+  padding-bottom: 0.5rem;
+} 

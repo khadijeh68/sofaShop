@@ -5,11 +5,15 @@ import Home from "../../pages/home";
 import Products from "../../pages/products";
 import Categories from "../categories";
 import Sidbar from "../categories/Sidbar";
+import Footer from "../footer";
+import Navbar from "../navbar";
 import SharedLayout from "../shared";
 
 function AppRouter() {
   return (
+    
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
@@ -23,6 +27,7 @@ function AppRouter() {
           
         </Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }

@@ -6,7 +6,7 @@ import Navbar from '../navbar'
 function SharedLayout() {
   return (
     <div>
-      <Navbar/>
+      
       <Outlet/>
     </div>
   )

@@ -13,14 +13,14 @@ const Slide = () => {
   return (
     <div className={styles.slider_container}>
       <Swiper
-        modules={[Pagination, Navigation, Scrollbar, A11y]}
+        modules={[Navigation,Pagination , Scrollbar, A11y]}
         slidesPerView={3}
         spaceBetween={10}
         navigation
         breakpoints={{
           340:{
             width: 200,
-            slidesPerview: 1
+            slidesPerview: 1,
           },
           768:{
             width: 768,
@@ -31,29 +31,23 @@ const Slide = () => {
             slidesPerview: 3,
           },
         }}
+     
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <SwiperSlide>
-          <Card image={sofa} category="مبل راحتی"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={Sofas} category="مبل کلاسیک"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={firstImg} category="مبل ال"/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <Card image={sofa} category="مبل راحتی"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={Sofas} category="مبل کلاسیک"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={firstImg} category="مبل ال"/>
-        </SwiperSlide>
         
+        <SwiperSlide>
+          <Card image={sofa} category="مبل راحتی"/>
+        </SwiperSlide>
+        <SwiperSlide >
+          <Card image={Sofas} category="مبل کلاسیک"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card image={firstImg} category="مبل ال"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card image={sofa} category="مبل چستر"/>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
