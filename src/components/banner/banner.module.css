@@ -1,0 +1,13 @@
+.banner {
+  width: 1200px;
+  height: 100px;
+  background-color: rgb(255, 226, 253);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.banner img{
+    cursor: pointer;
+}

@@ -39,22 +39,27 @@ const FooterSection = () => {
           </li>
         </ul>
       </div>
-
-      <form action="">
-        <p>با ثبت ایمیل، از آخرین محصولات و جدیدترین تخفیف ها باخبر شوید</p>
-        <input className={styles.email} type="text" placeholder="ایمیل"/>
-        <button className={styles.email_btn}>ثبت</button>
-      </form>
-      <div className={styles.namads}>
-        <div>
-          <img src={anjomanLogo} alt="anjoman Logo" />
-          <img src={enamadLogo} alt="enamad Logo" />
-        </div>
-        <div>
-          <img src={majaziLogo} alt="majazi Logo" />
-          <img src={samandehiLogo} alt="samandehi Logo" />
-        </div>
+      <div className={styles.form}>
+        <form action="">
+          <p>با ثبت ایمیل، از آخرین محصولات و جدیدترین تخفیف ها باخبر شوید</p>
+          <input className={styles.email} type="text" placeholder="ایمیل" />
+          <button className={styles.email_btn}>ثبت</button>
+        </form>
+        <div className={styles.namads}>
+        <img src={enamadLogo} alt="enamad Logo" />
+        <img src={majaziLogo} alt="majazi Logo" />
+        <img src={samandehiLogo} alt="samandehi Logo" />
       </div>
+        {/* <div className={styles.app}>
+            <p>دریافت اپلیکیشن</p>
+          <button>بازار</button>
+          <button>مایکت</button>
+          <button>سیب اپ</button>
+          <button>دریافت مستقیم</button>
+        </div> */}
+      </div>
+
+     
     </div>
   );
 };
