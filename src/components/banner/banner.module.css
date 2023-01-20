@@ -1,7 +1,7 @@
 .banner {
   width: 1200px;
   height: 100px;
-  background-color: rgb(255, 226, 253);
+  background-color: rgba(234, 225, 220, 0.863);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,4 +10,9 @@
 }
 .banner img{
     cursor: pointer;
+}
+.banner p{
+    background-color: rgb(247, 247, 247);
+    padding: 5px;
+    border-radius: 10px;
 }
