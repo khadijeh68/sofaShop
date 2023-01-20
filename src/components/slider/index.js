@@ -1,6 +1,9 @@
 import sofa from "../../assets/images/sofa.jpg";
-import Sofas from "../../assets/images/Sofas.jpg";
-import firstImg from "../../assets/images/firstImg.png";
+import gano from "../../assets/images/categories/rahati/gano.png";
+import chester from "../../assets/images/categories/chester/chester.jpg";
+import classic from "../../assets/images/categories/classic/classic.jpg";
+import L from "../../assets/images/categories/L/LSofa.jpg";
+import LChester from "../../assets/images/categories/chester/LChester.jpeg";
 import styles from "./slider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Scrollbar, A11y } from "swiper";
@@ -11,7 +14,13 @@ import Card from "../card";
 
 const Slide = () => {
   return (
-    <div className={styles.slider_container}>
+    <>
+    <div className={styles.title}>
+    <p className={styles.right}>مبلمان</p>
+    <hr className={styles.divider}/>
+    <p className={styles.left}>مشاهده همه</p>
+    </div>
+     <div className={styles.slider_container}>
       <Swiper
         modules={[Navigation,Pagination , Scrollbar, A11y]}
         slidesPerView={3}
@@ -35,21 +44,25 @@ const Slide = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        
         <SwiperSlide>
-          <Card image={sofa} category="مبل راحتی"/>
+          <Card image={gano} category=" راحتی"/>
         </SwiperSlide>
         <SwiperSlide >
-          <Card image={Sofas} category="مبل کلاسیک"/>
+          <Card image={classic} category=" کلاسیک"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Card image={firstImg} category="مبل ال"/>
+          <Card image={chester} category=" چستر"/>
         </SwiperSlide>
         <SwiperSlide>
-          <Card image={sofa} category="مبل چستر"/>
+          <Card image={LChester} category=" مدل ال چستر"/>
         </SwiperSlide>
+        <SwiperSlide>
+          <Card image={L} category="مدل ال"/>
+        </SwiperSlide>  
       </Swiper>
     </div>
+    </>
+   
   );
 };
 
