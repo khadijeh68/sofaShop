@@ -29,6 +29,11 @@
   text-align: center;
 }
 
+.shoppingGuide a:hover,
+.account a:hover{
+  color:  rgb(227, 106, 106);
+}
+
 .email {
   width: 400px;
   height: 30px;
@@ -37,6 +42,8 @@
   padding: 5px;
   border-width: 0;
   margin-bottom: 50px;
+  box-shadow: rgb(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
 }
 
 .email_btn {

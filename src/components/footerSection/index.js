@@ -42,7 +42,7 @@ const FooterSection = () => {
       <div className={styles.form}>
         <form action="">
           <p>با ثبت ایمیل، از آخرین محصولات و جدیدترین تخفیف ها باخبر شوید</p>
-          <input className={styles.email} type="text" placeholder="ایمیل" />
+          <input className={styles.email} type="text" placeholder="لطفا ایمیل خود را وارد کنید..." />
           <button className={styles.email_btn}>ثبت</button>
         </form>
         <div className={styles.namads}>

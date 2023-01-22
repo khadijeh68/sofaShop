@@ -1,5 +1,5 @@
 .banner {
-  width: 1200px;
+  /* width: 1200px; */
   height: 100px;
   background-color: rgba(234, 225, 220, 0.863);
   display: flex;
@@ -8,9 +8,11 @@
   margin: 20px auto;
   border-radius: 10px;
 }
+
 .banner img{
     cursor: pointer;
 }
+
 .banner p{
     background-color: rgb(247, 247, 247);
     padding: 5px;
