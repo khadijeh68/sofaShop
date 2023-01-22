@@ -9,12 +9,27 @@
   border-radius: 10px;
 }
 
-.banner img{
-    cursor: pointer;
+.banner img {
+  cursor: pointer;
 }
 
-.banner p{
-    background-color: rgb(247, 247, 247);
-    padding: 5px;
-    border-radius: 10px;
+.banner p {
+  background-color: rgb(247, 247, 247);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 720px) {
+  .banner {
+    height: 80px;
+  }
+
+  .banner img {
+    width: 80px;
+  }
+
+  .banner p {
+    display: none;
+  }
 }

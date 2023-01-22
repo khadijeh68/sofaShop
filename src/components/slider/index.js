@@ -15,54 +15,53 @@ import Card from "../card";
 const Slide = () => {
   return (
     <>
-    <div className={styles.title}>
-    <p className={styles.right}>مبلمان</p>
-    <hr className={styles.divider}/>
-    <p className={styles.left}>مشاهده همه</p>
-    </div>
-     <div className={styles.slider_container}>
-      <Swiper
-        modules={[Navigation,Pagination , Scrollbar, A11y]}
-        slidesPerView={3}
-        spaceBetween={10}
-        navigation
-        breakpoints={{
-          340:{
-            width: 200,
-            slidesPerview: 1,
-          },
-          768:{
-            width: 768,
-            slidesPerview: 2,
-          },
-          1040:{
-            width: 1040,
-            slidesPerview: 3,
-          },
-        }}
-     
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
-      >
-        <SwiperSlide>
-          <Card image={gano} category=" راحتی"/>
-        </SwiperSlide>
-        <SwiperSlide >
-          <Card image={classic} category=" کلاسیک"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={chester} category=" چستر"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={LChester} category=" مدل ال چستر"/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card image={L} category="مدل ال"/>
-        </SwiperSlide>  
-      </Swiper>
-    </div>
+      <div className={styles.title}>
+        <p className={styles.right}>مبلمان</p>
+        <hr className={styles.divider} />
+        <p className={styles.left}>مشاهده همه</p>
+      </div>
+      <div className={styles.slider_container}>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          slidesPerView={3}
+          spaceBetween={10}
+          navigation
+          // breakpoints={{
+          //   340:{
+          //     width: 200,
+          //     slidesPerview: 1,
+          //   },
+          //   768:{
+          //     width: 768,
+          //     slidesPerview: 2,
+          //   },
+          //   1040:{
+          //     width: 1040,
+          //     slidesPerview: 3,
+          //   },
+          // }}
+          className={styles.swiper_slide}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <Card image={gano} category="مدل راحتی" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card image={classic} category="مدل کلاسیک" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card image={chester} category="مدل چستر" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card image={LChester} category="مدل ال چستر" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card image={L} category="مدل ال" />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
-   
   );
 };
 

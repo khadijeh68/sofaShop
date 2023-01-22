@@ -1,5 +1,5 @@
 import styles from "./footerSection.module.css";
-import anjomanLogo from "../../assets/images/namads/anjomanLogo.png";
+// import anjomanLogo from "../../assets/images/namads/anjomanLogo.png";
 import enamadLogo from "../../assets/images/namads/enamadLogo.png";
 import majaziLogo from "../../assets/images/namads/majaziLogo.png";
 import samandehiLogo from "../../assets/images/namads/samandehiLogo.png";
@@ -7,6 +7,7 @@ import samandehiLogo from "../../assets/images/namads/samandehiLogo.png";
 const FooterSection = () => {
   return (
     <div className={styles.main}>
+     
       <div className={styles.shoppingGuide}>
         <ul>
           <p>راهنمای خرید</p>
@@ -39,27 +40,28 @@ const FooterSection = () => {
           </li>
         </ul>
       </div>
+
+      
       <div className={styles.form}>
         <form action="">
-          <p>با ثبت ایمیل، از آخرین محصولات و جدیدترین تخفیف ها باخبر شوید</p>
-          <input className={styles.email} type="text" placeholder="لطفا ایمیل خود را وارد کنید..." />
-          <button className={styles.email_btn}>ثبت</button>
+          <div className={styles.input}>
+            <p>با ثبت ایمیل، از آخرین محصولات و جدیدترین تخفیف ها باخبر شوید</p>
+            <div className={styles.form_email}>
+              <input
+                className={styles.email}
+                type="text"
+                placeholder="لطفا ایمیل خود را وارد کنید..."
+              />
+              <button className={styles.email_btn}>ثبت</button>
+            </div>
+          </div>
         </form>
         <div className={styles.namads}>
-        <img src={enamadLogo} alt="enamad Logo" />
-        <img src={majaziLogo} alt="majazi Logo" />
-        <img src={samandehiLogo} alt="samandehi Logo" />
+          <img src={enamadLogo} alt="enamad Logo" />
+          <img src={majaziLogo} alt="majazi Logo" />
+          <img src={samandehiLogo} alt="samandehi Logo" />
+        </div>
       </div>
-        {/* <div className={styles.app}>
-            <p>دریافت اپلیکیشن</p>
-          <button>بازار</button>
-          <button>مایکت</button>
-          <button>سیب اپ</button>
-          <button>دریافت مستقیم</button>
-        </div> */}
-      </div>
-
-     
     </div>
   );
 };

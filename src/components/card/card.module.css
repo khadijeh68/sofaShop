@@ -10,8 +10,17 @@
   border-top-right-radius: 10px;
   object-fit: cover;
 }
-p {
+.card p {
   font-size: medium;
   text-align: center;
   padding-bottom: 0.5rem;
 } 
+@media screen and (max-width: 720px) {
+  .card p {
+   font-size: 14px;
+  }
+  .card,.card img{
+    width: 100%;
+  }
+}
+
