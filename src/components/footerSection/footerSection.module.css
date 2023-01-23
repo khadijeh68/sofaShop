@@ -1,0 +1,105 @@
+.main {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  background-color: #f9f9f9;
+}
+
+.namads img {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main ul {
+  font-size: 1rem;
+}
+
+.main a {
+  font-size: 14px;
+  color: #918b8b;
+}
+
+.shoppingGuide,
+.account {
+  text-align: center;
+}
+
+.shoppingGuide p,
+.account p{
+padding-bottom: 10px;
+}
+
+.shoppingGuide a:hover,
+.account a:hover{
+  color:  rgb(227, 106, 106);
+}
+
+.email {
+  width: 300px;
+  height: 30px;
+  font-family: Vazir-Light;
+  font-size: 12px;
+  padding: 5px;
+  border-width: 0;
+  margin-bottom: 50px;
+  box-shadow: rgb(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.email_btn {
+  background-color: rgb(106, 106, 227);
+  color: white;
+  width: 50px;
+  height: 30px;
+  font-family: Vazir-Light;
+  font-size: 14px;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+.email_btn:hover {
+  background-color: rgb(227, 106, 106);
+}
+
+.form_email{
+  padding-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input p{
+  font-size: 1rem;
+}
+
+.input {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 720px) {
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding: 0;
+}
+  .namads img{
+    width: 90;
+    height: 115px;
+  }
+  .main p{
+    font-size: 14px;
+  }
+  
+}

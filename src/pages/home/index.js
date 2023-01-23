@@ -1,11 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import Slide from "../../components/slider";
-
+import styles from "./home.module.css"
 
 function Home() {
   return (
-    <div>
-      {/* <Slide /> */}
+    <div className={styles.home}>
+       <Slide /> 
     </div>
   );
 }

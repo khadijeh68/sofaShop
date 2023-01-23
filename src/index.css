@@ -8,8 +8,8 @@ body {
   font-size: 1.2rem;
   line-height: 1.3;
   font-family: Vazir-Medium;
+  overflow-x: hidden;
 }
-
 
 ul {
   list-style-type: none;

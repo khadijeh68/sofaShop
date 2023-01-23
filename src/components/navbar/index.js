@@ -4,6 +4,10 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
+import Home from "../../pages/home";
+import FooterSection from "../footerSection";
+import Footer from "../footer";
+import { Banner } from "../banner";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,44 +19,50 @@ const Navbar = () => {
   };
 
   return (
-    <header className={styles.navbar}>
-      <nav>
-        <ul className={nav ? [styles.menu,styles.active].join(' ') : styles.menu }>
-          <li>
-            <NavLink to="search" style={navLinkStyles}>
-              <IoSearch size={22} />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="user" style={navLinkStyles}>
-              <AiOutlineUser size={22} />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="categories" style={navLinkStyles}>
-              دسته بندی محصولات
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="aboutUs" style={navLinkStyles}>
-              درباره ما
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="contactUs" style={navLinkStyles}>
-              تماس با ما
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
-      <NavLink to="/" style={navLinkStyles}>
-        {/* <span>sofaShop</span> */}
-        <img src={logo} alt="sofaShop" />
-      </NavLink>
-      <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
-        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
-      </div>
-    </header>
+    <>
+      <header className={styles.navbar}>
+        <nav>
+          <ul
+            className={
+              nav ? [styles.menu, styles.active].join(" ") : styles.menu
+            }
+          >
+            <li>
+              <NavLink to="search" style={navLinkStyles}>
+                <IoSearch size={22} />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="user" style={navLinkStyles}>
+                <AiOutlineUser size={22} />
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="categories" style={navLinkStyles}>
+                دسته بندی محصولات
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="aboutUs" style={navLinkStyles}>
+                درباره ما
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="contactUs" style={navLinkStyles}>
+                تماس با ما
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+        <NavLink to="/" style={navLinkStyles}>
+          <img src={logo} alt="sofaShop" className={styles.img} />
+        </NavLink>
+        <div onClick={() => setNav(!nav)} className={styles.mobile_btn}>
+          {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+        </div>
+      </header>
+      
+    </>
   );
 };
 
