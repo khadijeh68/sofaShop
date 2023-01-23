@@ -1,4 +1,4 @@
-import sofa from "../../assets/images/sofa.jpg";
+// import sofa from "../../assets/images/sofa.jpg";
 import gano from "../../assets/images/categories/rahati/gano.png";
 import chester from "../../assets/images/categories/chester/chester.jpg";
 import classic from "../../assets/images/categories/classic/classic.jpg";

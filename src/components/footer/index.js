@@ -8,8 +8,8 @@ import {
 import { BsTelegram } from "react-icons/bs";
 import aparatLogo from "../../assets/images/aparatLogo.png";
 import styles from "./footer.module.css";
-import FooterSection from "../footerSection";
-import { Banner } from "../banner";
+// import FooterSection from "../footerSection";
+// import { Banner } from "../banner";
 
 const Footer = () => {
   return (
