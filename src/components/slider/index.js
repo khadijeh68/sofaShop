@@ -11,6 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Card from "../card";
+import SliderBed from "./sliderBed";
 
 const Slide = () => {
   return (
@@ -61,7 +62,10 @@ const Slide = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <SliderBed/>
+   
     </>
+
   );
 };
 

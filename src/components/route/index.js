@@ -1,11 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import AboutUs from "../../pages/aboutUs";
 import ContactUs from "../../pages/contactUs";
 import Home from "../../pages/home";
 import Products from "../../pages/products";
+import { Banner } from "../banner";
 import Categories from "../categories";
 import Sidbar from "../categories/Sidbar";
 import Footer from "../footer";
+import FooterSection from "../footerSection";
 import Navbar from "../navbar";
 import SharedLayout from "../shared";
 
@@ -27,6 +30,8 @@ function AppRouter() {
           
         </Route>
       </Routes>
+      <Banner />
+      <FooterSection/>
       <Footer/>
     </BrowserRouter>
   );
