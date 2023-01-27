@@ -103,3 +103,9 @@ padding-bottom: 10px;
   }
   
 }
+@media screen and (max-width: 775px) {
+  .namads img{
+    width: 90;
+    height: 115px;
+  }
+}

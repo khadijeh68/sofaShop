@@ -4,6 +4,7 @@ import enamadLogo from "../../assets/images/namads/enamadLogo.png";
 import majaziLogo from "../../assets/images/namads/majaziLogo.png";
 import samandehiLogo from "../../assets/images/namads/samandehiLogo.png";
 
+
 const FooterSection = () => {
   return (
     <div className={styles.main}>
@@ -61,6 +62,7 @@ const FooterSection = () => {
           <img src={majaziLogo} alt="majazi Logo" />
           <img src={samandehiLogo} alt="samandehi Logo" />
         </div>
+  
       </div>
     </div>
   );

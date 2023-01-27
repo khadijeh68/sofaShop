@@ -4,10 +4,6 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
-import Home from "../../pages/home";
-import FooterSection from "../footerSection";
-import Footer from "../footer";
-import { Banner } from "../banner";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
