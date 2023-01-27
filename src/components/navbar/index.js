@@ -28,27 +28,27 @@ const Navbar = () => {
             }
           >
             <li>
-              <NavLink to="search" style={navLinkStyles}>
+              <NavLink to="search" style={navLinkStyles} className={styles.item}>
                 <IoSearch size={22} />
               </NavLink>
             </li>
             <li>
-              <NavLink to="user" style={navLinkStyles}>
+              <NavLink to="user" style={navLinkStyles} className={styles.item}>
                 <AiOutlineUser size={22} />
               </NavLink>
             </li>
             <li>
-              <NavLink to="categories" style={navLinkStyles}>
+              <NavLink to="categories" style={navLinkStyles} className={styles.item}>
                 دسته بندی محصولات
               </NavLink>
             </li>
             <li>
-              <NavLink to="aboutUs" style={navLinkStyles}>
+              <NavLink to="aboutUs" style={navLinkStyles} className={styles.item}>
                 درباره ما
               </NavLink>
             </li>
             <li>
-              <NavLink to="contactUs" style={navLinkStyles}>
+              <NavLink to="contactUs" style={navLinkStyles} className={styles.item}>
                 تماس با ما
               </NavLink>
             </li>

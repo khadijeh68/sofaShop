@@ -6,7 +6,7 @@ import Products from "../../pages/products";
 import { fetchCategories } from "../../redux/features/categories/categoriesSlice";
 import { getProducts } from "../../redux/features/products/productsSlice";
 import style from "./category.module.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Categories() {
   const dispatch = useDispatch();
@@ -33,6 +33,7 @@ function Categories() {
               }}
               className={style.card}
             >
+      
               <Card.Header className={style.header}>
                 <Link
                   to={`/categories/${category.id}`}

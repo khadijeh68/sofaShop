@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { fetchProducts } from "../../redux/features/products/productsSlice";
 import style from "./products.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Products({ productsList, id }) {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ function Products({ productsList, id }) {
                   <Card.Img
                     className={style.img}
                     variant="top"
-                    src={`/assets/images/categories/rahati/${product.image}`}
+                    src={product.image}
                     alt="sofa"
                   />
                   <Card.Body>

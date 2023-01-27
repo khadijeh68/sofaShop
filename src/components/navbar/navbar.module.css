@@ -19,10 +19,13 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 .menu {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
+
 .menu li {
   padding: 1rem;
 }
@@ -52,23 +55,24 @@ a {
     align-items: center;
     position: fixed;
     /* left: -100%; */
-    left: -1000px;
-    right: 0;
+    /* left: -1000px; */
+    right: 1000px;
     top: 0;
-    bottom: 0;
     padding: 0;
-    /* width: 50%;
-    height: 100px; */
-    /* background-color:  #f8f8f8; */
-    transition: left 1s;
+    width: 200px;
+    height: 400px;
+    background-color: #e0dcdc;
+    /* transition: left 1s; */
     z-index: 10;
+    border-radius: 10px;
   }
 
   .active {
-    left: 0;
+    right: 0;
   }
+  
   .navbar a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
- 
+
 }
