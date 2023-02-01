@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "مبل راحتی هفت نفره آرون",
-      "image":"../../assets/images/categories/rahati/aron.jpg",
+      "image":"/assets/images/categories/rahati/aron.jpg",
       "color": "طوسی",
       "price": 30000000,
       "quantity": 5,

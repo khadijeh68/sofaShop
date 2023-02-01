@@ -24,8 +24,8 @@ const Sidbar = () => {
   }, [dispatch, categoryId]);
 
   return (
-    <div>
-      <div>
+    <div className={style.container}>
+      <div className={style.sidbar}>
         {categoriesList.map((item) => {
           return (
             <div key={item.id}>
@@ -40,7 +40,7 @@ const Sidbar = () => {
           );
         })}
       </div>
-      <div>
+       <div>
         {category.map((product) => {
           return (
             <Link
@@ -76,7 +76,7 @@ const Sidbar = () => {
             </Link>
           );
         })}
-      </div>
+      </div> 
     </div>
   );
 };
