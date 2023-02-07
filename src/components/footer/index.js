@@ -8,18 +8,21 @@ import {
 import { BsTelegram } from "react-icons/bs";
 import aparatLogo from "../../assets/images/aparatLogo.png";
 import styles from "./footer.module.css";
-// import FooterSection from "../footerSection";
-// import { Banner } from "../banner";
+import { IoIosArrowDropupCircle } from "react-icons/io";
 
 const Footer = () => {
+
+  const handleUp = () => {
+    window.location.href="#"
+  };
+
   return (
     <div className={styles.footer}>
-      {/* <Banner />
-      <FooterSection /> */}
       <div className={styles.container}>
         <p className={styles.container_sofaShop}>
           تمامی حقوق متعلق به شرکت سوفاشاپ می باشد.
         </p>
+      <div className={styles.footer_left}>
         <ul className={styles.contact}>
           <li>
             <a href="https://www.facebook.com/sofaShop">
@@ -56,11 +59,15 @@ const Footer = () => {
               <img
                 src={aparatLogo}
                 alt="aparat Logo"
-                style={{ width: "18px", height: "18px" }}
-              />
+                style={{ width: "18px", height: "18px" }} />
             </a>
           </li>
+         
         </ul>
+        <div onClick={handleUp}>
+          <IoIosArrowDropupCircle size={50}/>
+        </div>
+        </div>
       </div>
     </div>
   );

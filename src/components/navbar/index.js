@@ -4,10 +4,6 @@ import { NavLink } from "react-router-dom";
 import styles from "./navbar.module.css";
 import logo from "../../assets/images/logo.png";
 import { useState } from "react";
-import Home from "../../pages/home";
-import FooterSection from "../footerSection";
-import Footer from "../footer";
-import { Banner } from "../banner";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,27 +24,27 @@ const Navbar = () => {
             }
           >
             <li>
-              <NavLink to="search" style={navLinkStyles}>
+              <NavLink to="/search" style={navLinkStyles} className={styles.item}>
                 <IoSearch size={22} />
               </NavLink>
             </li>
             <li>
-              <NavLink to="user" style={navLinkStyles}>
+              <NavLink to="/login" style={navLinkStyles} className={styles.item}>
                 <AiOutlineUser size={22} />
               </NavLink>
             </li>
             <li>
-              <NavLink to="categories" style={navLinkStyles}>
+              <NavLink to="/categories" style={navLinkStyles} className={styles.item}>
                 دسته بندی محصولات
               </NavLink>
             </li>
             <li>
-              <NavLink to="aboutUs" style={navLinkStyles}>
+              <NavLink to="/aboutUs" style={navLinkStyles} className={styles.item}>
                 درباره ما
               </NavLink>
             </li>
             <li>
-              <NavLink to="contactUs" style={navLinkStyles}>
+              <NavLink to="/contactUs" style={navLinkStyles} className={styles.item}>
                 تماس با ما
               </NavLink>
             </li>

@@ -62,7 +62,7 @@ const Slide = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <SliderBed/>
+      {/* <SliderBed/> */}
    
     </>
 

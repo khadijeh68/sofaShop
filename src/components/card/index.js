@@ -5,7 +5,7 @@ const Card = ({image , category}) => {
   return (
     <div className={styles.card}>
         <img src={image} alt="first slide"/>
-        <p >{category}</p>
+        <p>{category}</p>
       
     </div>
   )
